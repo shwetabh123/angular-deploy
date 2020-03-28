@@ -8,7 +8,8 @@ app.listen(process.env.PORT||8080);
 
 //PATHLOCATIONSTARTEGY
 
-app.get('/*',function(req,res){
+app.get('/*',function(req,res)
+{
 
 res.sendFile(path.join(_dirname+ '/dist/angular-deploy/index.html'));
 
